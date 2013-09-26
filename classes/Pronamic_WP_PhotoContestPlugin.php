@@ -6,7 +6,7 @@ class Pronamic_WP_PhotoContestPlugin {
 	 *
 	 * @var string
 	 */
-	private $file;
+	public $file;
 
 	/**
 	 * Constructs and intializes an Pronamic Post Like plugin

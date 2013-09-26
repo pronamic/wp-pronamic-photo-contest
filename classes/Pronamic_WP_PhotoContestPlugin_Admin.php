@@ -17,10 +17,21 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 		$this->plugin = $plugin;
 
 		// Actions
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+
 		add_action( 'add_meta_boxes', array( $this, 'add_meta_boxes' ) );
 
 		add_action( 'save_post',   array( $this, 'save_photo_contest' ), 10, 2 );
 		add_action( 'save_post',   array( $this, 'save_photo_entry' ), 10, 2 );
+	}
+
+	//////////////////////////////////////////////////
+
+	/**
+	 * Enqueue scripts
+	 */
+	function enqueue_scripts() {
+		wp_register_style( 'pronamic-photo-contest', plugins_url( 'admin/css/style.css', $this->plugin->file ), false, '1.0.0' );
 	}
 
 	//////////////////////////////////////////////////

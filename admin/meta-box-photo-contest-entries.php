@@ -2,10 +2,12 @@
 
 global $post;
 
-$entries = pronamic_photo_contest_get_entries()
+$entries = pronamic_photo_contest_get_entries();
+
+wp_enqueue_style( 'pronamic-photo-contest' );
 
 ?>
-<div class="pronamic-photo-contest-entries">
+<div class="pronamic-photo-entries">
 
 	<?php if ( empty( $entries ) ) : ?>
 	
@@ -14,8 +16,8 @@ $entries = pronamic_photo_contest_get_entries()
 		</p>
 	
 	<?php else : ?>
-	
-		<ul class="">
+
+		<ul class="pronamic-photo-entries-list">
 
 			<?php foreach ( $entries as $entry ) : ?>
 
@@ -49,6 +51,8 @@ $entries = pronamic_photo_contest_get_entries()
 
 			<?php endforeach; ?>
 		</ul>
+		
+		<div class="pronamic-photo-entries-clear"></div>
 	
 	<?php endif; ?>
 
