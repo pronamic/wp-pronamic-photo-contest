@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Post Like\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-26 11:22+0100\n"
-"PO-Revision-Date: 2013-09-26 11:23+0100\n"
+"POT-Creation-Date: 2013-09-26 11:43+0100\n"
+"PO-Revision-Date: 2013-09-26 11:44+0100\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -21,110 +21,131 @@ msgstr ""
 
 #: pronamic-photo-contest.php:58
 msgctxt "post type general name"
-msgid "Photo Entries"
-msgstr "Foto inzendingen"
+msgid "Photo Contests"
+msgstr "Fotowedstrijden"
 
 #: pronamic-photo-contest.php:59
 msgctxt "post type singular name"
-msgid "Photo Entry"
-msgstr "Foto inzending"
+msgid "Photo Contest"
+msgstr "Fotowedstrijd"
 
 #: pronamic-photo-contest.php:60
-msgctxt "pronamic_photo_entry"
+msgctxt "pronamic_photo_contest"
 msgid "Add New"
 msgstr "Nieuwe toevoegen"
 
 #: pronamic-photo-contest.php:61
-msgid "Add New Photo Entry"
-msgstr "Nieuwe foto inzending toevoegen"
+msgid "Add New Photo Contest"
+msgstr "Nieuwe fotowedstrijd toevoegen"
 
 #: pronamic-photo-contest.php:62
-msgid "Edit Photo Entry"
-msgstr "Bewerk foto inzending"
+msgid "Edit Photo Contest"
+msgstr "Bewerk fotowedstrijd"
 
 #: pronamic-photo-contest.php:63
-msgid "New Photo Entry"
-msgstr "Nieuwe foto inzending"
+msgid "New Photo Contest"
+msgstr "Nieuwe fotowedstrijd toevoegen"
 
 #: pronamic-photo-contest.php:64
-msgid "View Photo Entry"
-msgstr "Bekijk foto inzending"
+msgid "View Photo Contest"
+msgstr "Bekijk fotowedstrijd"
 
 #: pronamic-photo-contest.php:65
-msgid "Search Photo Entries"
-msgstr "Foto inzendingen zoeken"
+msgid "Search Photo Contests"
+msgstr "Fotowedstrijden zoeken"
 
 #: pronamic-photo-contest.php:66
-msgid "No photo entries found"
-msgstr "Geen foto inzendingen gevonden."
+msgid "No photo contests found"
+msgstr "Geen fotowedstrijden gevonden."
 
 #: pronamic-photo-contest.php:67
-msgid "No photo entries found in Trash"
-msgstr "Geen foto inzendingen gevonden in prullenbak."
+msgid "No photo contests found in Trash"
+msgstr "Geen fotowedstrijden gevonden in prullenbak."
 
 #: pronamic-photo-contest.php:68
-msgid "Parent Photo Entry:"
-msgstr "Bovenliggende foto inzending:"
+msgid "Parent Photo Contest:"
+msgstr "Bovenliggende fotowedstrijd:"
 
 #: pronamic-photo-contest.php:69
+msgid "Photo Contests"
+msgstr "Fotowedstrijden"
+
+#: pronamic-photo-contest.php:78
+msgctxt "URL slug"
+msgid "photo-contests"
+msgstr "fotowedstrijden"
+
+#: pronamic-photo-contest.php:85
+msgctxt "post type general name"
 msgid "Photo Entries"
 msgstr "Foto inzendingen"
 
-#: pronamic-photo-contest.php:78
+#: pronamic-photo-contest.php:86
+msgctxt "post type singular name"
+msgid "Photo Entry"
+msgstr "Foto inzending"
+
+#: pronamic-photo-contest.php:87
+msgctxt "pronamic_photo_entry"
+msgid "Add New"
+msgstr "Nieuwe toevoegen"
+
+#: pronamic-photo-contest.php:88
+msgid "Add New Photo Entry"
+msgstr "Nieuwe foto inzending toevoegen"
+
+#: pronamic-photo-contest.php:89
+msgid "Edit Photo Entry"
+msgstr "Bewerk foto inzending"
+
+#: pronamic-photo-contest.php:90
+msgid "New Photo Entry"
+msgstr "Nieuwe foto inzending"
+
+#: pronamic-photo-contest.php:91
+msgid "View Photo Entry"
+msgstr "Bekijk foto inzending"
+
+#: pronamic-photo-contest.php:92
+msgid "Search Photo Entries"
+msgstr "Foto inzendingen zoeken"
+
+#: pronamic-photo-contest.php:93
+msgid "No photo entries found"
+msgstr "Geen foto inzendingen gevonden."
+
+#: pronamic-photo-contest.php:94
+msgid "No photo entries found in Trash"
+msgstr "Geen foto inzendingen gevonden in prullenbak."
+
+#: pronamic-photo-contest.php:95
+msgid "Parent Photo Entry:"
+msgstr "Bovenliggende foto inzending:"
+
+#: pronamic-photo-contest.php:96
+msgid "Entries"
+msgstr "Inzendingen"
+
+#: pronamic-photo-contest.php:105
 msgctxt "URL slug"
 msgid "photo-entries"
 msgstr "foto-inzendingen"
 
-#: pronamic-photo-contest.php:86
-msgctxt "category general name"
-msgid "Photo Contests"
-msgstr "Fotowedstrijden"
+#~ msgctxt "category general name"
+#~ msgid "Photo Contests"
+#~ msgstr "Fotowedstrijden"
 
-#: pronamic-photo-contest.php:87
-msgctxt "category singular name"
-msgid "Photo Contest"
-msgstr "Fotowedstrijd"
+#~ msgid "All Photo Contests"
+#~ msgstr "Alle fotowedstrijden"
 
-#: pronamic-photo-contest.php:88
-msgid "Search Photo Contests"
-msgstr "Fotowedstrijden zoeken"
+#~ msgid "Parent Photo Contest"
+#~ msgstr "Bovenliggende fotowedstrijd"
 
-#: pronamic-photo-contest.php:89
-msgid "All Photo Contests"
-msgstr "Alle fotowedstrijden"
+#~ msgid "Update Photo Contest"
+#~ msgstr "Update fotowedstrijd"
 
-#: pronamic-photo-contest.php:90
-msgid "Parent Photo Contest"
-msgstr "Bovenliggende fotowedstrijd"
-
-#: pronamic-photo-contest.php:91
-msgid "Parent Photo Contest:"
-msgstr "Bovenliggende fotowedstrijd:"
-
-#: pronamic-photo-contest.php:92
-msgid "Edit Photo Contest"
-msgstr "Bewerk fotowedstrijd"
-
-#: pronamic-photo-contest.php:93
-msgid "Update Photo Contest"
-msgstr "Update fotowedstrijd"
-
-#: pronamic-photo-contest.php:94
-msgid "Add New Photo Contest"
-msgstr "Nieuwe fotowedstrijd toevoegen"
-
-#: pronamic-photo-contest.php:95
-msgid "New Photo Contest Name"
-msgstr "Nieuwe fotowedstrijd naam"
-
-#: pronamic-photo-contest.php:96
-msgid "Photo Contests"
-msgstr "Fotowedstrijden"
-
-#: pronamic-photo-contest.php:100
-msgctxt "URL slug"
-msgid "photo-contest"
-msgstr "fotowedstrijden"
+#~ msgid "New Photo Contest Name"
+#~ msgstr "Nieuwe fotowedstrijd naam"
 
 #~ msgid "I liked this post on Facebook."
 #~ msgstr "Ik vond dit bericht leuk op Facebook."
