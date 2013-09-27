@@ -79,6 +79,58 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 	 */
 	public function enqueue_scripts() {
 		wp_register_style( 'pronamic-photo-contest', plugins_url( 'admin/css/style.css', $this->plugin->file ), false, '1.0.0' );
+
+		// Screen
+		$screen = get_current_screen();
+		
+		if ( isset( $screen, $screen->post_type ) && $screen->post_type == 'pronamic_photo_conte' ) {
+			wp_enqueue_script( 'jquery-ui-datepicker' );
+		
+			wp_enqueue_style( 'jquery-ui-datepicker', plugins_url( '/jquery-ui/themes/base/jquery.ui.all.css', $this->plugin->file ) );
+		
+			self::enqueue_jquery_ui_i18n_path( 'datepicker' );
+		}
+	}
+
+	//////////////////////////////////////////////////
+
+	/**
+	 * Get jQuery UI i18n file
+	 * https://github.com/jquery/jquery-ui/tree/master/ui/i18n
+	 * 
+	 * @param string $module
+	 */
+	private function enqueue_jquery_ui_i18n_path( $module ) {
+		$result = false;
+
+		// Retrive the WordPress locale, for example 'en_GB'
+		$locale = get_locale();
+		
+		// jQuery UI uses 'en-GB' notation, replace underscore with hyphen 
+		$locale = str_replace( '_', '-', $locale );
+		
+		// Create an search array with two variants 'en-GB' and 'en'
+		$search = array(
+			$locale, // en-GB
+			substr( $locale, 0, 2 ) // en
+		);
+		
+		foreach ( $search as $name ) {
+			$path = sprintf( '/jquery-ui/languages/jquery.ui.%s-%s.js', $module, $name );
+
+			$file = $this->plugin->path . $path;
+
+			if ( is_readable( $file ) ) {
+				wp_enqueue_script( 
+					'jquery-ui-' . $module . '-' . $name,
+					plugins_url( $path, $this->plugin->file ) 
+				);
+
+				break;
+			}
+		}
+		
+		return $result;
 	}
 
 	//////////////////////////////////////////////////
@@ -194,7 +246,7 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 			'_pronamic_photo_contest_submit_start_date' => FILTER_SANITIZE_STRING,
 			'_pronamic_photo_contest_submit_end_date'   => FILTER_SANITIZE_STRING,
 			'_pronamic_photo_contest_vote_start_date'   => FILTER_SANITIZE_STRING,
-			'_pronamic_photo_contest_vote_end_date  '   => FILTER_SANITIZE_STRING
+			'_pronamic_photo_contest_vote_end_date'     => FILTER_SANITIZE_STRING
 		);
 	
 		$this->save_post_meta( $post_id, $definition );

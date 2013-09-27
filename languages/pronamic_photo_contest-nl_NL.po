@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Post Like\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-27 12:26+0100\n"
-"PO-Revision-Date: 2013-09-27 12:26+0100\n"
+"POT-Creation-Date: 2013-09-27 16:48+0100\n"
+"PO-Revision-Date: 2013-09-27 16:48+0100\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -19,21 +19,39 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: admin/meta-box-photo-contest-details.php:9
-msgid "Start Date Submit"
-msgstr "Startdatum inzenden"
+#: admin/meta-box-photo-contest-details.php:12
+msgid "Submit Period"
+msgstr "Inzenden periode"
 
-#: admin/meta-box-photo-contest-details.php:14
-msgid "End Date Submit"
-msgstr "Einddatum inzenden"
+#: admin/meta-box-photo-contest-details.php:18
+#: admin/meta-box-photo-contest-details.php:57
+#, php-format
+msgid "%s to %s"
+msgstr "%s tot %s"
 
-#: admin/meta-box-photo-contest-details.php:19
-msgid "Start Date Vote"
-msgstr "Startdatum stemmen"
+#: admin/meta-box-photo-contest-details.php:38
+#, php-format
+msgid "This contest is currently %s for new entries."
+msgstr "Deze wedstrijd is momenteel %s voor nieuwe inzendingen."
 
-#: admin/meta-box-photo-contest-details.php:24
-msgid "End Date Vote"
-msgstr "Einddatum stemmen"
+#: admin/meta-box-photo-contest-details.php:41
+#: admin/meta-box-photo-contest-details.php:80
+msgid "open"
+msgstr "open"
+
+#: admin/meta-box-photo-contest-details.php:41
+#: admin/meta-box-photo-contest-details.php:80
+msgid "closed"
+msgstr "gesloten"
+
+#: admin/meta-box-photo-contest-details.php:51
+msgid "Vote Period"
+msgstr "Stem periode"
+
+#: admin/meta-box-photo-contest-details.php:77
+#, php-format
+msgid "This contest is currently %s for votes."
+msgstr "Deze wedstrijd is momenteel %s voor stemmen."
 
 #: admin/meta-box-photo-contest-entries.php:15
 msgid "No entries."
@@ -155,7 +173,7 @@ msgid "Parent Photo Entry:"
 msgstr "Bovenliggende foto inzending:"
 
 #: classes/Pronamic_WP_PhotoContestPlugin.php:87
-#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:101
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:153
 msgid "Entries"
 msgstr "Inzendingen"
 
@@ -180,13 +198,17 @@ msgstr "Fotowedstrijd instellingen"
 msgid "Settings"
 msgstr "Instellingen"
 
-#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:92
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:144
 msgid "Details"
 msgstr "Details"
 
-#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:110
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:162
 msgid "Photo Entry"
 msgstr "Foto inzending"
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:336
+msgid "You don't  have any Gravity Forms forms."
+msgstr "Je hebt momenteel geen Gravity Forms formulieren."
 
 #: includes/post.php:32
 msgid "Title"
@@ -195,6 +217,18 @@ msgstr "Titel"
 #: includes/post.php:60
 msgid "No contest"
 msgstr "Geen wedstrijd"
+
+#~ msgid "Start Date Submit"
+#~ msgstr "Startdatum inzenden"
+
+#~ msgid "End Date Submit"
+#~ msgstr "Einddatum inzenden"
+
+#~ msgid "Start Date Vote"
+#~ msgstr "Startdatum stemmen"
+
+#~ msgid "End Date Vote"
+#~ msgstr "Einddatum stemmen"
 
 #, fuzzy
 #~ msgid "Categories"
@@ -1236,9 +1270,6 @@ msgstr "Geen wedstrijd"
 
 #~ msgid "iDEAL Payment"
 #~ msgstr "iDEAL-betaling"
-
-#~ msgid "Expiration Period"
-#~ msgstr "Vervalperiode"
 
 #~ msgid "Account Number"
 #~ msgstr "Rrekeningnummer"
