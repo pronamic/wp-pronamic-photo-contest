@@ -17,6 +17,9 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 		$this->plugin = $plugin;
 
 		// Actions
+		add_action( 'admin_init', array( $this, 'admin_init' ) );
+		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
+
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 
 		add_action( 'add_meta_boxes', array( $this, 'add_meta_boxes' ) );
@@ -26,11 +29,55 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 	}
 
 	//////////////////////////////////////////////////
+	
+	/**
+	 * Admin init
+	 */
+	public function admin_init() {
+
+		// Settings
+		add_settings_section(
+			'pronamic_photo_contest_general', // id
+			__( 'General', 'pronamic_photo_contest' ), // title
+			array( $this, 'settings_section' ), // callback
+			'pronamic_photo_contest' // page
+		);
+		
+		add_settings_field(
+			'pronamic_photo_contest_gf_submit_form_id', // id
+			__( 'Gravity Forms submit form', 'pronamic_photo_contest' ), // title
+			array( __CLASS__, 'dropdown_gf_forms' ), // callback
+			'pronamic_photo_contest', // page
+			'pronamic_photo_contest_general', // section
+			array( 'label_for' => 'pronamic_photo_contest_gf_submit_form_id' ) // args
+		);
+
+		// Register settings
+		register_setting( 'pronamic_photo_contest', 'pronamic_photo_contest_gf_submit_form_id' );
+	}
+
+	//////////////////////////////////////////////////
+	
+	/**
+	* Admin menu
+	*/
+	public function admin_menu() {
+		add_submenu_page(
+			'edit.php?post_type=pronamic_photo_conte', // parent_slug
+			__( 'Photo Contest Settings', 'pronamic_photo_contest' ), // page_title
+			__( 'Settings', 'pronamic_photo_contest' ), // menu_title
+			'read', // capability
+			'pronamic_photo_contest_settings', // menu_slug
+			array( $this, 'page_settings' ) // function
+		);
+	}
+
+	//////////////////////////////////////////////////
 
 	/**
 	 * Enqueue scripts
 	 */
-	function enqueue_scripts() {
+	public function enqueue_scripts() {
 		wp_register_style( 'pronamic-photo-contest', plugins_url( 'admin/css/style.css', $this->plugin->file ), false, '1.0.0' );
 	}
 
@@ -39,7 +86,7 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 	/**
 	 * Add meta boxes
 	 */
-	function add_meta_boxes() {
+	public function add_meta_boxes() {
 		add_meta_box(
 			'pronamic_photo_contest_details',
 			__( 'Details', 'pronamic_photo_contest' ),
@@ -48,6 +95,7 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 			'normal',
 			'high'
 		);
+
 		add_meta_box(
 			'pronamic_photo_contest_entries',
 			__( 'Entries', 'pronamic_photo_contest' ),
@@ -74,7 +122,7 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 	 * 
 	 * @param WP_Post $post
 	 */
-	function photo_contest_details_meta_box( $post ) {
+	public function photo_contest_details_meta_box( $post ) {
 		include $this->plugin->path . '/admin/meta-box-photo-contest-details.php';
 	}
 
@@ -83,7 +131,7 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 	 * 
 	 * @param WP_Post $post
 	 */
-	function photo_contest_entries_meta_box( $post ) {
+	public function photo_contest_entries_meta_box( $post ) {
 		include $this->plugin->path . '/admin/meta-box-photo-contest-entries.php';
 	}
 
@@ -92,7 +140,7 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 	 * 
 	 * @param WP_Post $post
 	 */
-	function photo_entry_details_meta_box( $post ) {
+	public function photo_entry_details_meta_box( $post ) {
 		include $this->plugin->path . '/admin/meta-box-photo-entry-details.php';
 	}
 
@@ -124,7 +172,7 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 	 * @param string $post_id
 	 * @param WP_Post $post
 	 */
-	function save_photo_contest( $post_id, $post ) {
+	public function save_photo_contest( $post_id, $post ) {
 		// Doing autosave
 		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 			return;
@@ -160,7 +208,7 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 	 * @param string $post_id
 	 * @param WP_Post $post
 	 */
-	function save_photo_entry( $post_id, $post ) {
+	public function save_photo_entry( $post_id, $post ) {
 		// Doing autosave
 		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 			return;
@@ -183,5 +231,64 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 		);
 	
 		$this->save_post_meta( $post_id, $definition );
+	}
+
+	//////////////////////////////////////////////////
+
+	/**
+	 * Page settings
+	 */
+	public function page_settings() {
+		include $this->plugin->path . '/admin/settings.php';
+	}
+
+	//////////////////////////////////////////////////
+	
+	/**
+	 * Settings section
+	 */
+	public function settings_section() {
+	
+	}
+	
+	/**
+	 * Input text
+	 *
+	 * @param array $args
+	 */
+	public static function input_text( $args ) {
+		printf(
+			'<input name="%s" id="%s" type="text" value="%s" class="%s" />',
+			esc_attr( $args['label_for'] ),
+			esc_attr( $args['label_for'] ),
+			esc_attr( get_option( $args['label_for'] ) ),
+			'regular-text code'
+		);
+	}
+	
+	/**
+	 * Dropdown Gravity Forms forms
+	 */
+	public function dropdown_gf_forms( $args ) {
+		$id    = $args['label_for'];
+		$name  = $args['label_for'];
+		$value = get_option( $args['label_for'] );
+
+		$forms = array();
+		
+		if ( method_exists( 'RGFormsModel', 'get_forms') ) {
+			$forms = RGFormsModel::get_forms();
+		}
+		
+		if ( empty( $forms ) ) {
+			_e( 'You don\'t  have any Gravity Forms forms.', 'pronamic_photo_contest' );
+		} else {
+			printf( '<select name="%s" id="%s">',$name, $id );
+			printf( '<option value="%s" %s>%s</option>', '', selected( $value, '', false ), '' );
+			foreach ( $forms as $form ) {
+				printf( '<option value="%s" %s>%s</option>', $form->id, selected( $value, $form->id, false ), $form->title );
+			}
+			printf( '</select>' );
+		}
 	}
 }

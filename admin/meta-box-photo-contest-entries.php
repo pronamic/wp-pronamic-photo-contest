@@ -27,7 +27,7 @@ wp_enqueue_style( 'pronamic-photo-contest' );
 					printf(
 						'<a href="%s" target="_blank">%s</a>',
 						get_permalink( $entry->ID ),
-						get_the_post_thumbnail( $entry->ID, 'medium' )
+						get_the_post_thumbnail( $entry->ID, 'thumbnail' )
 					);
 					
 					echo '<br />';

@@ -2,10 +2,15 @@
 
 .pronamic-photo-entries-list {
 	list-style: none;
+
+	margin: 1em -1em;
+	padding: 0;
 }
 
 .pronamic-photo-entries-list li {
-	float: left;	
+	float: left;
+
+	margin: 1em;
 }
 
 .pronamic-photo-entries-clear {

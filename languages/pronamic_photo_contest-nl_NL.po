@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Post Like\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-26 13:59+0100\n"
-"PO-Revision-Date: 2013-09-26 14:00+0100\n"
+"POT-Creation-Date: 2013-09-27 12:26+0100\n"
+"PO-Revision-Date: 2013-09-27 12:26+0100\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -35,15 +35,15 @@ msgstr "Startdatum stemmen"
 msgid "End Date Vote"
 msgstr "Einddatum stemmen"
 
-#: admin/meta-box-photo-contest-entries.php:13
+#: admin/meta-box-photo-contest-entries.php:15
 msgid "No entries."
 msgstr "Geen inzendingen"
 
-#: admin/meta-box-photo-contest-entries.php:36
+#: admin/meta-box-photo-contest-entries.php:38 includes/post.php:77
 msgid "View"
-msgstr "Bekijk"
+msgstr "Bekijken"
 
-#: admin/meta-box-photo-contest-entries.php:44
+#: admin/meta-box-photo-contest-entries.php:46
 msgid "Edit"
 msgstr "Bewerken"
 
@@ -98,7 +98,7 @@ msgstr "Geen fotowedstrijden gevonden in prullenbak."
 msgid "Parent Photo Contest:"
 msgstr "Bovenliggende fotowedstrijd:"
 
-#: classes/Pronamic_WP_PhotoContestPlugin.php:60
+#: classes/Pronamic_WP_PhotoContestPlugin.php:60 includes/post.php:35
 msgid "Photo Contest"
 msgstr "Fotowedstrijd"
 
@@ -155,7 +155,7 @@ msgid "Parent Photo Entry:"
 msgstr "Bovenliggende foto inzending:"
 
 #: classes/Pronamic_WP_PhotoContestPlugin.php:87
-#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:42
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:101
 msgid "Entries"
 msgstr "Inzendingen"
 
@@ -164,16 +164,41 @@ msgctxt "URL slug"
 msgid "photo-entries"
 msgstr "foto-inzendingen"
 
-#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:34
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:41
+msgid "General"
+msgstr "Algemeen"
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:48
+msgid "Gravity Forms submit form"
+msgstr "Gravity Forms inzenden formulier"
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:67
+msgid "Photo Contest Settings"
+msgstr "Fotowedstrijd instellingen"
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:68
+msgid "Settings"
+msgstr "Instellingen"
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:92
 msgid "Details"
 msgstr "Details"
 
-#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:51
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:110
 msgid "Photo Entry"
 msgstr "Foto inzending"
 
-#~ msgid "Photo Contests"
-#~ msgstr "Fotowedstrijden"
+#: includes/post.php:32
+msgid "Title"
+msgstr "Titel"
+
+#: includes/post.php:60
+msgid "No contest"
+msgstr "Geen wedstrijd"
+
+#, fuzzy
+#~ msgid "Categories"
+#~ msgstr "Bekijk alle categorieën"
 
 #~ msgid "Start Date Contest"
 #~ msgstr "Startdatum wedstrijd"
@@ -374,9 +399,6 @@ msgstr "Foto inzending"
 #~ msgid "Allow iDEAL payments."
 #~ msgstr "iDEAL-betalingen toestaan."
 
-#~ msgid "Title"
-#~ msgstr "Titel"
-
 #~ msgid "This controls the title which the user sees during checkout."
 #~ msgstr ""
 #~ "Hiermee beheert u de titel die gebruikers zien tijdens het afrekenen."
@@ -532,9 +554,6 @@ msgstr "Foto inzending"
 
 #~ msgid "Payments"
 #~ msgstr "Betalingen"
-
-#~ msgid "Settings"
-#~ msgstr "Instellingen"
 
 #~ msgid "Pages Generator"
 #~ msgstr "Pagina's generator"
@@ -714,9 +733,6 @@ msgstr "Foto inzending"
 
 #~ msgid "Code"
 #~ msgstr "Code"
-
-#~ msgid "General"
-#~ msgstr "Algemeen"
 
 #~ msgid "Mode"
 #~ msgstr "Modus"
@@ -1687,9 +1703,6 @@ msgstr "Foto inzending"
 #~ msgid "Execute"
 #~ msgstr "Uitvoeren"
 
-#~ msgid "Gravity Forms payment %s"
-#~ msgstr "Gravity Forms betaling %s"
-
 #, fuzzy
 #~ msgid "iDEAL Feed Settings"
 #~ msgstr "iDEAL instellingen"
@@ -1727,9 +1740,6 @@ msgstr "Foto inzending"
 
 #~ msgid "Search Transactions"
 #~ msgstr "Zoek transacties"
-
-#~ msgid "View all categories"
-#~ msgstr "Bekijk alle categorieën"
 
 #~ msgctxt "link name"
 #~ msgid "Name"
