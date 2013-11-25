@@ -20,6 +20,7 @@ GitHub URI: https://github.com/pronamic/wp-pronamic-photo-contest
 
 require_once dirname( __FILE__ ) . '/classes/Pronamic_WP_PhotoContestPlugin.php';
 require_once dirname( __FILE__ ) . '/classes/Pronamic_WP_PhotoContestPlugin_Admin.php';
+require_once dirname( __FILE__ ) . '/classes/Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget.php';
 
 global $pronamic_photo_contest_plugin;
 

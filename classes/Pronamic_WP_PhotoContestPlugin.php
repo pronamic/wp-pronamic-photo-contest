@@ -25,6 +25,8 @@ class Pronamic_WP_PhotoContestPlugin {
 
 		add_action( 'init', array( $this, 'init' ) );
 		
+		add_action( 'widgets_init', array( $this, 'register_widgets' ) );
+		
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
 
 		// Admin
@@ -97,6 +99,13 @@ class Pronamic_WP_PhotoContestPlugin {
 			'menu_icon'          => plugins_url( 'admin/images/camera.png', $this->file ),
 			'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'custom-fields' )
 		) );
+	}
+	
+	/**
+	 * Register widgets
+	 */
+	public function register_widgets() {
+		Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget::register_widget();
 	}
 	
 	public function enqueue_scripts() {
