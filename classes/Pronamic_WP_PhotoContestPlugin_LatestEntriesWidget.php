@@ -86,7 +86,7 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 			
 			if ( isset( $instance[ 'height' ] ) &&
 				 is_numeric( $instance[ 'height' ] ) ) {
-				$width  = $instance[ 'height' ];
+				$height  = $instance[ 'height' ];
 			}
 			
 			$output = '<a href="' . get_post_permalink( $latest_entry->ID ) . '">';
