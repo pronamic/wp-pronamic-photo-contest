@@ -39,10 +39,14 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 	 * @see WP_Widget::widget()
 	 */
 	public function widget( $args, $instance ) {
-		$title = '';
+		$data = new stdClass();
 		
 		if ( isset( $instance[ 'title' ] ) ) {
-			$title = $instance[ 'title' ];
+			$data->title = $instance[ 'title' ];
+		}
+		else
+		{
+			$data->title = '';
 		}
 		
 		if ( isset( $instance[ 'contest_ID' ] ) &&
@@ -74,6 +78,8 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 			$latest_entries_query = new WP_Query( $latest_entries_query_options );
 		}
 		
+		$data->image = $data->message = '';
+		
 		if ( $latest_entries_query->have_posts() ) {
 			$latest_entry = $latest_entries_query->next_post();
 			
@@ -89,41 +95,48 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 				$height  = $instance[ 'height' ];
 			}
 			
-			$output = '<a href="' . get_post_permalink( $latest_entry->ID ) . '">';
+			$data->image .= '<a href="' . get_post_permalink( $latest_entry->ID ) . '">';
 			
 			if ( $width > 0 &&
 				 $height > 0) {
-			 	$output .= get_the_post_thumbnail( $latest_entry->ID, array( $instance[ 'width' ], $instance[ 'height' ] ) );
+			 	$data->image .= get_the_post_thumbnail( $latest_entry->ID, array( $instance[ 'width' ], $instance[ 'height' ] ) );
 			}
 			else {
-				$output .= get_the_post_thumbnail( $latest_entry->ID );
+				$data->image .= get_the_post_thumbnail( $latest_entry->ID );
 			}
 			
-			$output .= '</a>';
+			$data->image .= '</a>';
 		}
 		else {
-			$output = __( 'No entries have been posted yet.', 'pronamic_photo_contest' );
+			$data->message .= __( 'No entries have been posted yet.', 'pronamic_photo_contest' );
 		}
 		
-		$beforeWidget = $afterWidget = $beforeTitle = $afterTitle = '';
+		if ( isset( $instance[ 'content' ] ) ) {
+			$data->content = $instance[ 'content' ];
+		}
+		else {
+			$data->content = '';
+		}
+		
+		$data->beforeWidget = $data->afterWidget = $data->beforeTitle = $data->afterTitle = '';
 		
 		if ( isset( $args[ 'before_widget' ] ) ) {
-			$beforeWidget = $args[ 'before_widget' ];
+			$data->beforeWidget = $args[ 'before_widget' ];
 		}
 
 		if ( isset( $args[ 'after_widget' ] ) ) {
-			$afterWidget = $args[ 'after_widget' ];
+			$data->afterWidget = $args[ 'after_widget' ];
 		}
 
 		if ( isset( $args[ 'before_title' ] ) ) {
-			$beforeTitle = $args[ 'before_title' ];
+			$data->beforeTitle = $args[ 'before_title' ];
 		}
 
 		if ( isset( $args[ 'after_title' ] ) ) {
-			$afterTitle = $args[ 'after_title' ];
+			$data->afterTitle = $args[ 'after_title' ];
 		}
-
-		echo $beforeWidget . ( !empty( $title ) ? $beforeTitle . $title . $afterTitle : '' ) . $output . $afterWidget;
+		
+		include $this->plugin->path . 'admin' . DIRECTORY_SEPARATOR . 'latest_entries_widget.php';
 	}
 	
 	//////////////////////////////////////////////////
@@ -134,6 +147,10 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 	public function update( $new_instance, $old_instance ) {
 		if ( isset( $new_instance[ 'title' ] ) ) {
 			$old_instance[ 'title' ] = $new_instance[ 'title' ];
+		}
+		
+		if ( isset( $new_instance[ 'content' ] ) ) {
+			$old_instance[ 'content' ] = $new_instance[ 'content' ];
 		}
 
 		if ( isset($new_instance[ 'contest_ID' ] ) &&
@@ -162,6 +179,7 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 	public function form( $instance ) {
 		$defaults = array(
 			'title'      => $this->widget_name,
+			'content'    => '',
 			'contest_ID' => $this->latest_entry_ID,
 			'width'      => 0,
 			'height'     => 0

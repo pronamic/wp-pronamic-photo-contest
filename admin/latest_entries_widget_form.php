@@ -5,6 +5,12 @@
 </p>
 
 <p>
+	<label for="<?php echo $this->get_field_id( 'content' ); ?>"><?php _e( 'Content' , 'pronamic_photo_contest' ); ?>:</label>
+	
+	<input type="text" class="widefat" id="<?php echo $this->get_field_id( 'content' ); ?>" name="<?php echo $this->get_field_name( 'content' ); ?>" value="<?php echo htmlspecialchars( $instance[ 'content' ] ); ?>" />
+</p>
+
+<p>
 	<label for="<?php echo $this->get_field_id( 'contest_ID' ); ?>"><?php _e( 'Contest' , 'pronamic_photo_contest' ); ?>:</label>
 	
 	<select class="widefat" id="<?php echo $this->get_field_id( 'contest_ID' ); ?>" name="<?php echo $this->get_field_name( 'contest_ID' ); ?>" style="width:100%">
