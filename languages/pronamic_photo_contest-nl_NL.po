@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Post Like\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-25 13:31+0100\n"
-"PO-Revision-Date: 2013-11-25 13:33+0100\n"
+"POT-Creation-Date: 2013-11-27 15:07+0100\n"
+"PO-Revision-Date: 2013-11-27 15:07+0100\n"
 "Last-Translator: \n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -24,27 +24,31 @@ msgid "Title"
 msgstr "Titel"
 
 #: admin/latest_entries_widget_form.php:8
+msgid "Content"
+msgstr "Content"
+
+#: admin/latest_entries_widget_form.php:14
 #: admin/meta-box-photo-entry-details.php:9
 msgid "Contest"
 msgstr "Wedstrijd"
 
-#: admin/latest_entries_widget_form.php:12
+#: admin/latest_entries_widget_form.php:18
 msgid "Latest entry"
 msgstr "Nieuwste inzending"
 
-#: admin/latest_entries_widget_form.php:15
+#: admin/latest_entries_widget_form.php:21
 msgid "Untitled contest"
 msgstr "Naamloze wedstrijd"
 
-#: admin/latest_entries_widget_form.php:22
+#: admin/latest_entries_widget_form.php:28
 msgid "Image size"
 msgstr "Afbeeldingsformaat"
 
-#: admin/latest_entries_widget_form.php:24
+#: admin/latest_entries_widget_form.php:30
 msgid "Width"
 msgstr "Breedte"
 
-#: admin/latest_entries_widget_form.php:28
+#: admin/latest_entries_widget_form.php:34
 msgid "Height"
 msgstr "Hoogte"
 
@@ -243,7 +247,7 @@ msgstr "Nieuwste Inzendingen Widget"
 msgid "Shows the latest entry of a photo contest."
 msgstr "Laat de nieuwste inzendingen van een fotowedstrijd zien."
 
-#: classes/Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget.php:105
+#: classes/Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget.php:111
 msgid "No entries have been posted yet."
 msgstr "Er zijn nog geen inzendingen ingestuurd."
 
