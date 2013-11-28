@@ -59,7 +59,7 @@ wp_nonce_field( 'pronamic_photo_contest_save', 'pronamic_photo_contest_meta_box_
 					'<input id="%s" name="%s" value="%s" type="%s" class="%s" />',
 					esc_attr( '_pronamic_photo_contest_vote_start_date' ),
 					esc_attr( '_pronamic_photo_contest_vote_start_date' ),
-					esc_attr( get_post_meta( $post->ID, '_pronamic_photo_contest_submit_start_date', true ) ),
+					esc_attr( get_post_meta( $post->ID, '_pronamic_photo_contest_vote_start_date', true ) ),
 					esc_attr( 'text' ),
 					esc_attr( 'date' )
 				),
