@@ -17,6 +17,11 @@ Stable tag: 1.0.0
 ...
 
 
+== Developers ==
+
+*	php ~/wp/svn/i18n-tools/makepot.php wp-plugin ~/wp/git/pronamic-photo-contest ~/wp/git/pronamic-photo-contest/languages/pronamic_photo_contest.pot
+
+
 == Screenshots ==
 
 ...
