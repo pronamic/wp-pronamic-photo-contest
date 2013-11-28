@@ -1,0 +1,268 @@
+# Copyright (C) 2013 Pronamic Photo Contest
+# This file is distributed under the same license as the Pronamic Photo Contest package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Pronamic Photo Contest 1.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/pronamic-photo-contest\n"
+"POT-Creation-Date: 2013-11-28 08:53:47+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin/latest_entries_widget_form.php:2 includes/post.php:32
+msgid "Title"
+msgstr ""
+
+#: admin/latest_entries_widget_form.php:8
+msgid "Content"
+msgstr ""
+
+#: admin/latest_entries_widget_form.php:14
+#: admin/meta-box-photo-entry-details.php:9
+msgid "Contest"
+msgstr ""
+
+#: admin/latest_entries_widget_form.php:18
+msgid "Latest entry"
+msgstr ""
+
+#: admin/latest_entries_widget_form.php:21
+msgid "Untitled contest"
+msgstr ""
+
+#: admin/latest_entries_widget_form.php:28
+msgid "Image size"
+msgstr ""
+
+#: admin/latest_entries_widget_form.php:30
+msgid "Width"
+msgstr ""
+
+#: admin/latest_entries_widget_form.php:34
+msgid "Height"
+msgstr ""
+
+#: admin/meta-box-photo-contest-details.php:12
+msgid "Submit Period"
+msgstr ""
+
+#: admin/meta-box-photo-contest-details.php:18
+#: admin/meta-box-photo-contest-details.php:57 includes/functions.php:28
+msgid "%s to %s"
+msgstr ""
+
+#: admin/meta-box-photo-contest-details.php:38
+msgid "This contest is currently %s for new entries."
+msgstr ""
+
+#: admin/meta-box-photo-contest-details.php:41
+#: admin/meta-box-photo-contest-details.php:80
+msgid "open"
+msgstr ""
+
+#: admin/meta-box-photo-contest-details.php:41
+#: admin/meta-box-photo-contest-details.php:80
+msgid "closed"
+msgstr ""
+
+#: admin/meta-box-photo-contest-details.php:51
+msgid "Vote Period"
+msgstr ""
+
+#: admin/meta-box-photo-contest-details.php:77
+msgid "This contest is currently %s for votes."
+msgstr ""
+
+#: admin/meta-box-photo-contest-entries.php:15
+msgid "No entries."
+msgstr ""
+
+#: admin/meta-box-photo-contest-entries.php:38 includes/post.php:77
+msgid "View"
+msgstr ""
+
+#: admin/meta-box-photo-contest-entries.php:46
+msgid "Edit"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:51
+msgctxt "post type general name"
+msgid "Photo Contests"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:52
+msgctxt "post type singular name"
+msgid "Photo Contest"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:53
+msgctxt "pronamic_photo_contest"
+msgid "Add New"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:54
+msgid "Add New Photo Contest"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:55
+msgid "Edit Photo Contest"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:56
+msgid "New Photo Contest"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:57
+msgid "View Photo Contest"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:58
+msgid "Search Photo Contests"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:59
+msgid "No photo contests found"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:60
+msgid "No photo contests found in Trash"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:61
+msgid "Parent Photo Contest:"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:62 includes/post.php:35
+msgid "Photo Contest"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:71
+msgctxt "URL slug"
+msgid "photo-contests"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:78
+msgctxt "post type general name"
+msgid "Photo Entries"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:79
+msgctxt "post type singular name"
+msgid "Photo Entry"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:80
+msgctxt "pronamic_photo_entry"
+msgid "Add New"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:81
+msgid "Add New Photo Entry"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:82
+msgid "Edit Photo Entry"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:83
+msgid "New Photo Entry"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:84
+msgid "View Photo Entry"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:85
+msgid "Search Photo Entries"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:86
+msgid "No photo entries found"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:87
+msgid "No photo entries found in Trash"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:88
+msgid "Parent Photo Entry:"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:89
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:153
+msgid "Entries"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:98
+msgctxt "URL slug"
+msgid "photo-entries"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:41
+msgid "General"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:48
+msgid "Gravity Forms submit form"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:67
+msgid "Photo Contest Settings"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:68
+msgid "Settings"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:144
+msgid "Details"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:162
+msgid "Photo Entry"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:336
+msgid "You don't  have any Gravity Forms forms."
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget.php:24
+msgid "Latest Entries Widget"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget.php:31
+msgid "Shows the latest entry of a photo contest."
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget.php:111
+msgid "No entries have been posted yet."
+msgstr ""
+
+#: includes/post.php:60
+msgid "No contest"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Pronamic Photo Contest"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://wp.pronamic.eu/plugins/pronamic-photo-contest/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The Pronamic Photo Contest plugin allows you to setup an photo contest on "
+"your WordPress site."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Pronamic"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://pronamic.eu/"
+msgstr ""

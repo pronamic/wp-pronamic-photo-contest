@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Pronamic Photo Contest
-Plugin URI: http://pronamic.eu/wp-plugins/photo-contest/
-Description: 
+Plugin URI: http://wp.pronamic.eu/plugins/pronamic-photo-contest/
+Description: The Pronamic Photo Contest plugin allows you to setup an photo contest on your WordPress site. 
  
 Version: 1.0.0
 Requires at least: 3.0
