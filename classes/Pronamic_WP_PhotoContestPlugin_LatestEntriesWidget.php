@@ -28,7 +28,7 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 			$this->widget_name,
 			array (
 				'classname'   => __CLASS__,
-				'description' => __( 'Shows the latest entry of a photo contest.', 'pronamic_photo_contest' )
+				'description' => __( 'Shows the latest entry of a photo contest.', 'pronamic_photo_contest' ),
 			)
 		);
 	}
@@ -43,20 +43,17 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 		
 		if ( isset( $instance[ 'title' ] ) ) {
 			$data->title = $instance[ 'title' ];
-		}
-		else
-		{
+		} else {
 			$data->title = '';
 		}
 		
-		if ( isset( $instance[ 'contest_ID' ] ) &&
-			 is_numeric( $instance[ 'contest_ID' ] ) ) {
-			 $contest_ID = intval( $instance[ 'contest_ID' ] );
-		}
-		else {
+		if ( isset( $instance['contest_ID'] ) &&
+			is_numeric( $instance['contest_ID'] ) ) {
+			$contest_ID = intval( $instance[ 'contest_ID' ] );
+		} else {
 			$contest_ID = $this->latest_entry_ID;
 		}
-		
+
 		$latest_entries_query = new WP_Query();
 		
 		$latest_entries_query_options = array(
@@ -64,7 +61,7 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 			'orderby'        => 'date',
 			'order'          => 'DESC',
 			'posts_per_page' => 1,
-			'meta_query'     => array( array( 'key' => '_thumbnail_id' ) )
+			'meta_query'     => array( array( 'key' => '_thumbnail_id' ) ),
 		);
 		
 		// Get the latest entry of a specific contest
@@ -100,21 +97,18 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 			if ( $width > 0 &&
 				 $height > 0) {
 			 	$data->image .= get_the_post_thumbnail( $latest_entry->ID, array( $instance[ 'width' ], $instance[ 'height' ] ) );
-			}
-			else {
+			} else {
 				$data->image .= get_the_post_thumbnail( $latest_entry->ID );
 			}
 			
 			$data->image .= '</a>';
-		}
-		else {
+		} else {
 			$data->message .= __( 'No entries have been posted yet.', 'pronamic_photo_contest' );
 		}
 		
 		if ( isset( $instance[ 'content' ] ) ) {
 			$data->content = $instance[ 'content' ];
-		}
-		else {
+		} else {
 			$data->content = '';
 		}
 		
@@ -182,7 +176,7 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 			'content'    => '',
 			'contest_ID' => $this->latest_entry_ID,
 			'width'      => 0,
-			'height'     => 0
+			'height'     => 0,
 		);
 
 		// Merge database settings with defaults
@@ -193,7 +187,7 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 		// Get all constests
 		$contests_query = new WP_Query( array(
 			'post_type'      => 'pronamic_photo_conte',
-			'posts_per_page' => -1
+			'posts_per_page' => -1,
 		) );
 		
 		include $this->plugin->path . 'admin' . DIRECTORY_SEPARATOR . 'latest_entries_widget_form.php';
