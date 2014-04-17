@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+.pronamic-photo-entries-list {
+	list-style: none;
+}
+
+.pronamic-photo-entries-list li {
+	float: left;
+
+	margin: 0 10px 10px 0;
+}
+
+.pronamic-photo-entries-clear {
+	clear: both;
+}

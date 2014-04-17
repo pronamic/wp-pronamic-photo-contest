@@ -1,9 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Pronamic Post Like\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-26 11:22+0100\n"
-"PO-Revision-Date: 2013-09-26 11:23+0100\n"
+"Project-Id-Version: Pronamic Photo Contest\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/pronamic-photo-"
+"contest\n"
+"POT-Creation-Date: 2014-04-17 10:24:01+00:00\n"
+"PO-Revision-Date: 2014-04-17 12:24+0100\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -13,118 +14,302 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_n:1,2;__ngettext:1,2;__withdesc;_ewithdesc;_c;"
 "_n_noop:1,2;__ngettext_noop:1,2;_x:2c,1;_nc:1,2;esc_attr_e;esc_html_e;"
 "esc_attr__;_nx:4c,1,2;_nx_noop:4c,1,2;esc_html_x:2c,1;esc_html__;_ex:2c,1\n"
-"X-Poedit-Basepath: ../\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: .\n"
 
-#: pronamic-photo-contest.php:58
+#: admin/latest_entries_widget_form.php:2 includes/post.php:32
+msgid "Title"
+msgstr "Titel"
+
+#: admin/latest_entries_widget_form.php:8
+msgid "Content"
+msgstr "Content"
+
+#: admin/latest_entries_widget_form.php:14
+#: admin/meta-box-photo-entry-details.php:9
+msgid "Contest"
+msgstr "Wedstrijd"
+
+#: admin/latest_entries_widget_form.php:18
+msgid "Latest entry"
+msgstr "Nieuwste inzending"
+
+#: admin/latest_entries_widget_form.php:21
+msgid "Untitled contest"
+msgstr "Naamloze wedstrijd"
+
+#: admin/latest_entries_widget_form.php:28
+msgid "Image size"
+msgstr "Afbeeldingsformaat"
+
+#: admin/latest_entries_widget_form.php:30
+msgid "Width"
+msgstr "Breedte"
+
+#: admin/latest_entries_widget_form.php:34
+msgid "Height"
+msgstr "Hoogte"
+
+#: admin/meta-box-photo-contest-details.php:12
+msgid "Submit Period"
+msgstr "Inzenden periode"
+
+#: admin/meta-box-photo-contest-details.php:18
+#: admin/meta-box-photo-contest-details.php:57 includes/functions.php:28
+msgid "%s to %s"
+msgstr "%s tot %s"
+
+#: admin/meta-box-photo-contest-details.php:38
+msgid "This contest is currently %s for new entries."
+msgstr "Deze wedstrijd is momenteel %s voor nieuwe inzendingen."
+
+#: admin/meta-box-photo-contest-details.php:41
+#: admin/meta-box-photo-contest-details.php:80
+msgid "open"
+msgstr "open"
+
+#: admin/meta-box-photo-contest-details.php:41
+#: admin/meta-box-photo-contest-details.php:80
+msgid "closed"
+msgstr "gesloten"
+
+#: admin/meta-box-photo-contest-details.php:51
+msgid "Vote Period"
+msgstr "Stem periode"
+
+#: admin/meta-box-photo-contest-details.php:77
+msgid "This contest is currently %s for votes."
+msgstr "Deze wedstrijd is momenteel %s voor stemmen."
+
+#: admin/meta-box-photo-contest-entries.php:15
+msgid "No entries."
+msgstr "Geen inzendingen"
+
+#: admin/meta-box-photo-contest-entries.php:38 includes/post.php:77
+msgid "View"
+msgstr "Bekijken"
+
+#: admin/meta-box-photo-contest-entries.php:46
+msgid "Edit"
+msgstr "Bewerken"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:54
+msgid "Add New Photo Contest"
+msgstr "Nieuwe fotowedstrijd toevoegen"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:55
+msgid "Edit Photo Contest"
+msgstr "Bewerk fotowedstrijd"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:56
+msgid "New Photo Contest"
+msgstr "Nieuwe fotowedstrijd toevoegen"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:57
+msgid "View Photo Contest"
+msgstr "Bekijk fotowedstrijd"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:58
+msgid "Search Photo Contests"
+msgstr "Fotowedstrijden zoeken"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:59
+msgid "No photo contests found"
+msgstr "Geen fotowedstrijden gevonden."
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:60
+msgid "No photo contests found in Trash"
+msgstr "Geen fotowedstrijden gevonden in prullenbak."
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:61
+msgid "Parent Photo Contest:"
+msgstr "Bovenliggende fotowedstrijd:"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:62 includes/post.php:35
+msgid "Photo Contest"
+msgstr "Fotowedstrijd"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:81
+msgid "Add New Photo Entry"
+msgstr "Nieuwe foto inzending toevoegen"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:82
+msgid "Edit Photo Entry"
+msgstr "Bewerk foto inzending"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:83
+msgid "New Photo Entry"
+msgstr "Nieuwe foto inzending"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:84
+msgid "View Photo Entry"
+msgstr "Bekijk foto inzending"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:85
+msgid "Search Photo Entries"
+msgstr "Foto inzendingen zoeken"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:86
+msgid "No photo entries found"
+msgstr "Geen foto inzendingen gevonden."
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:87
+msgid "No photo entries found in Trash"
+msgstr "Geen foto inzendingen gevonden in prullenbak."
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:88
+msgid "Parent Photo Entry:"
+msgstr "Bovenliggende foto inzending:"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:89
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:153
+msgid "Entries"
+msgstr "Inzendingen"
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:41
+msgid "General"
+msgstr "Algemeen"
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:48
+msgid "Gravity Forms submit form"
+msgstr "Gravity Forms inzenden formulier"
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:67
+msgid "Photo Contest Settings"
+msgstr "Fotowedstrijd instellingen"
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:68
+msgid "Settings"
+msgstr "Instellingen"
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:144
+msgid "Details"
+msgstr "Details"
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:162
+msgid "Photo Entry"
+msgstr "Foto inzending"
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:336
+msgid "You don't  have any Gravity Forms forms."
+msgstr "Je hebt momenteel geen Gravity Forms formulieren."
+
+#: classes/Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget.php:24
+msgid "Latest Entries Widget"
+msgstr "Nieuwste Inzendingen Widget"
+
+#: classes/Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget.php:31
+msgid "Shows the latest entry of a photo contest."
+msgstr "Laat de nieuwste inzendingen van een fotowedstrijd zien."
+
+#: classes/Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget.php:111
+msgid "No entries have been posted yet."
+msgstr "Er zijn nog geen inzendingen ingestuurd."
+
+#: includes/post.php:60
+msgid "No contest"
+msgstr "Geen wedstrijd"
+
+#. Plugin Name of the plugin/theme
+msgid "Pronamic Photo Contest"
+msgstr "Pronamic fotowedstrijd"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.happywp.com/plugins/pronamic-photo-contest/"
+msgstr "http://www.happywp.com/plugins/pronamic-photo-contest/"
+
+#. Description of the plugin/theme
+msgid ""
+"The Pronamic Photo Contest plugin allows you to setup an photo contest on "
+"your WordPress site."
+msgstr ""
+"De Pronamic fotowedstrijd plugin maakt het mogelijk om een fotowedstrijd op "
+"te zetten in je WordPress website."
+
+#. Author of the plugin/theme
+msgid "Pronamic"
+msgstr "Pronamic"
+
+#. Author URI of the plugin/theme
+msgid "http://pronamic.eu/"
+msgstr "http://pronamic.nl/"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:51
+msgctxt "post type general name"
+msgid "Photo Contests"
+msgstr "Fotowedstrijden"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:78
 msgctxt "post type general name"
 msgid "Photo Entries"
 msgstr "Foto inzendingen"
 
-#: pronamic-photo-contest.php:59
+#: classes/Pronamic_WP_PhotoContestPlugin.php:52
+msgctxt "post type singular name"
+msgid "Photo Contest"
+msgstr "Fotowedstrijd"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:79
 msgctxt "post type singular name"
 msgid "Photo Entry"
 msgstr "Foto inzending"
 
-#: pronamic-photo-contest.php:60
-msgctxt "pronamic_photo_entry"
+#: classes/Pronamic_WP_PhotoContestPlugin.php:53
+msgctxt "pronamic_photo_contest"
 msgid "Add New"
 msgstr "Nieuwe toevoegen"
 
-#: pronamic-photo-contest.php:61
-msgid "Add New Photo Entry"
-msgstr "Nieuwe foto inzending toevoegen"
+#: classes/Pronamic_WP_PhotoContestPlugin.php:71
+msgctxt "URL slug"
+msgid "photo-contests"
+msgstr "fotowedstrijden"
 
-#: pronamic-photo-contest.php:62
-msgid "Edit Photo Entry"
-msgstr "Bewerk foto inzending"
-
-#: pronamic-photo-contest.php:63
-msgid "New Photo Entry"
-msgstr "Nieuwe foto inzending"
-
-#: pronamic-photo-contest.php:64
-msgid "View Photo Entry"
-msgstr "Bekijk foto inzending"
-
-#: pronamic-photo-contest.php:65
-msgid "Search Photo Entries"
-msgstr "Foto inzendingen zoeken"
-
-#: pronamic-photo-contest.php:66
-msgid "No photo entries found"
-msgstr "Geen foto inzendingen gevonden."
-
-#: pronamic-photo-contest.php:67
-msgid "No photo entries found in Trash"
-msgstr "Geen foto inzendingen gevonden in prullenbak."
-
-#: pronamic-photo-contest.php:68
-msgid "Parent Photo Entry:"
-msgstr "Bovenliggende foto inzending:"
-
-#: pronamic-photo-contest.php:69
-msgid "Photo Entries"
-msgstr "Foto inzendingen"
-
-#: pronamic-photo-contest.php:78
+#: classes/Pronamic_WP_PhotoContestPlugin.php:98
 msgctxt "URL slug"
 msgid "photo-entries"
 msgstr "foto-inzendingen"
 
-#: pronamic-photo-contest.php:86
-msgctxt "category general name"
-msgid "Photo Contests"
-msgstr "Fotowedstrijden"
+#: classes/Pronamic_WP_PhotoContestPlugin.php:80
+msgctxt "pronamic_photo_entry"
+msgid "Add New"
+msgstr "Nieuwe toevoegen"
 
-#: pronamic-photo-contest.php:87
-msgctxt "category singular name"
-msgid "Photo Contest"
-msgstr "Fotowedstrijd"
+#~ msgid "Start Date Submit"
+#~ msgstr "Startdatum inzenden"
 
-#: pronamic-photo-contest.php:88
-msgid "Search Photo Contests"
-msgstr "Fotowedstrijden zoeken"
+#~ msgid "End Date Submit"
+#~ msgstr "Einddatum inzenden"
 
-#: pronamic-photo-contest.php:89
-msgid "All Photo Contests"
-msgstr "Alle fotowedstrijden"
+#~ msgid "Start Date Vote"
+#~ msgstr "Startdatum stemmen"
 
-#: pronamic-photo-contest.php:90
-msgid "Parent Photo Contest"
-msgstr "Bovenliggende fotowedstrijd"
+#~ msgid "End Date Vote"
+#~ msgstr "Einddatum stemmen"
 
-#: pronamic-photo-contest.php:91
-msgid "Parent Photo Contest:"
-msgstr "Bovenliggende fotowedstrijd:"
+#, fuzzy
+#~ msgid "Categories"
+#~ msgstr "Bekijk alle categorieën"
 
-#: pronamic-photo-contest.php:92
-msgid "Edit Photo Contest"
-msgstr "Bewerk fotowedstrijd"
+#~ msgid "Start Date Contest"
+#~ msgstr "Startdatum wedstrijd"
 
-#: pronamic-photo-contest.php:93
-msgid "Update Photo Contest"
-msgstr "Update fotowedstrijd"
+#, fuzzy
+#~ msgid "Domain Name"
+#~ msgstr "Algemene naam"
 
-#: pronamic-photo-contest.php:94
-msgid "Add New Photo Contest"
-msgstr "Nieuwe fotowedstrijd toevoegen"
+#~ msgctxt "category general name"
+#~ msgid "Photo Contests"
+#~ msgstr "Fotowedstrijden"
 
-#: pronamic-photo-contest.php:95
-msgid "New Photo Contest Name"
-msgstr "Nieuwe fotowedstrijd naam"
+#~ msgid "All Photo Contests"
+#~ msgstr "Alle fotowedstrijden"
 
-#: pronamic-photo-contest.php:96
-msgid "Photo Contests"
-msgstr "Fotowedstrijden"
+#~ msgid "Update Photo Contest"
+#~ msgstr "Update fotowedstrijd"
 
-#: pronamic-photo-contest.php:100
-msgctxt "URL slug"
-msgid "photo-contest"
-msgstr "fotowedstrijden"
+#~ msgid "New Photo Contest Name"
+#~ msgstr "Nieuwe fotowedstrijd naam"
 
 #~ msgid "I liked this post on Facebook."
 #~ msgstr "Ik vond dit bericht leuk op Facebook."
@@ -302,9 +487,6 @@ msgstr "fotowedstrijden"
 #~ msgid "Allow iDEAL payments."
 #~ msgstr "iDEAL-betalingen toestaan."
 
-#~ msgid "Title"
-#~ msgstr "Titel"
-
 #~ msgid "This controls the title which the user sees during checkout."
 #~ msgstr ""
 #~ "Hiermee beheert u de titel die gebruikers zien tijdens het afrekenen."
@@ -461,9 +643,6 @@ msgstr "fotowedstrijden"
 #~ msgid "Payments"
 #~ msgstr "Betalingen"
 
-#~ msgid "Settings"
-#~ msgstr "Instellingen"
-
 #~ msgid "Pages Generator"
 #~ msgstr "Pagina's generator"
 
@@ -533,9 +712,6 @@ msgstr "fotowedstrijden"
 
 #~ msgid "Source"
 #~ msgstr "Bron"
-
-#~ msgid "Details"
-#~ msgstr "Details"
 
 #~ msgid ""
 #~ "<strong>Pronamic iDEAL limited:</strong> You exceeded the maximum free "
@@ -640,14 +816,8 @@ msgstr "fotowedstrijden"
 #~ msgid "Banner 100&times;100 (without campaign statements)"
 #~ msgstr "Banner 100&times;100 (zonder campagne-uitingen)"
 
-#~ msgid "Image"
-#~ msgstr "Afbeelding"
-
 #~ msgid "Code"
 #~ msgstr "Code"
-
-#~ msgid "General"
-#~ msgstr "Algemeen"
 
 #~ msgid "Mode"
 #~ msgstr "Modus"
@@ -934,9 +1104,6 @@ msgstr "fotowedstrijden"
 #~ msgid "eg, section"
 #~ msgstr "bijvoorbeeld, sectie"
 
-#~ msgid "Common Name"
-#~ msgstr "Algemene naam"
-
 #~ msgid "eg, YOUR name"
 #~ msgstr "bijvoorbeeld, uw naam"
 
@@ -1055,9 +1222,6 @@ msgstr "fotowedstrijden"
 #~ msgid "Number Payments"
 #~ msgstr "Aantal betalingen"
 
-#~ msgid "Edit"
-#~ msgstr "Bewerken"
-
 #~ msgid "Tests"
 #~ msgstr "Tests"
 
@@ -1157,9 +1321,6 @@ msgstr "fotowedstrijden"
 
 #~ msgid "iDEAL Payment"
 #~ msgstr "iDEAL-betaling"
-
-#~ msgid "Expiration Period"
-#~ msgstr "Vervalperiode"
 
 #~ msgid "Account Number"
 #~ msgstr "Rrekeningnummer"
@@ -1366,12 +1527,12 @@ msgstr "fotowedstrijden"
 #~ "32 tekens zal automatisch worden afgekapt."
 
 #~ msgid ""
-#~ "Merge Tag Examples: Entry Id = <code>{entry_id}</code>, Form Id = <code>"
-#~ "{form_id}</code>, Form Title = <code>{form_title}</code>"
+#~ "Merge Tag Examples: Entry Id = <code>{entry_id}</code>, Form Id = "
+#~ "<code>{form_id}</code>, Form Title = <code>{form_title}</code>"
 #~ msgstr ""
 #~ "Samenvoegen tag voorbeelden: Inzending ID = <code>{entry_id}</code>, "
-#~ "Formulier ID = <code>{form_id}</code>, Formulier titel = <code>"
-#~ "{form_title}</code>"
+#~ "Formulier ID = <code>{form_id}</code>, Formulier titel = "
+#~ "<code>{form_title}</code>"
 
 #~ msgid "Options"
 #~ msgstr "Opties"
@@ -1624,9 +1785,6 @@ msgstr "fotowedstrijden"
 #~ msgid "Execute"
 #~ msgstr "Uitvoeren"
 
-#~ msgid "Gravity Forms payment %s"
-#~ msgstr "Gravity Forms betaling %s"
-
 #, fuzzy
 #~ msgid "iDEAL Feed Settings"
 #~ msgstr "iDEAL instellingen"
@@ -1664,9 +1822,6 @@ msgstr "fotowedstrijden"
 
 #~ msgid "Search Transactions"
 #~ msgstr "Zoek transacties"
-
-#~ msgid "View all categories"
-#~ msgstr "Bekijk alle categorieën"
 
 #~ msgctxt "link name"
 #~ msgid "Name"
@@ -1735,12 +1890,6 @@ msgstr "fotowedstrijden"
 #~ msgid "Blocks"
 #~ msgstr "Blokken"
 
-#~ msgid "http://pronamic.eu/"
-#~ msgstr "http://pronamic.nl/"
-
-#~ msgid "http://pronamic.eu/contact/"
-#~ msgstr "http://pronamic.nl/contact/"
-
 #~ msgid "Support"
 #~ msgstr "Support"
 
@@ -1755,9 +1904,6 @@ msgstr "fotowedstrijden"
 
 #~ msgid "News"
 #~ msgstr "Nieuws"
-
-#~ msgid "Pronamic News"
-#~ msgstr "Pronamic nieuws"
 
 #~ msgid "Concept and realisation by %s"
 #~ msgstr "Concept en realisatie door %s"
@@ -1779,12 +1925,6 @@ msgstr "fotowedstrijden"
 
 #~ msgid "Longitude"
 #~ msgstr "Lengtegraad"
-
-#~ msgid "Width"
-#~ msgstr "Breedte"
-
-#~ msgid "Height"
-#~ msgstr "Hoogte"
 
 #~ msgid "Show Google Maps"
 #~ msgstr "Google Maps weergeven"

@@ -2,10 +2,10 @@
 Contributors: pronamic, remcotolsma
 Tags: pronamic, post, like
 Requires at least: 3.0
-Tested up to: 3.2
-Stable tag: 1.0.0
+Tested up to: 3.9
+Stable tag: 1.0.1
 
-
+The Pronamic Photo Contest plugin allows you to setup an photo contest on your WordPress site.
 
 == Description ==
 
@@ -17,12 +17,20 @@ Stable tag: 1.0.0
 ...
 
 
+== Developers ==
+
+*	php ~/wp/svn/i18n-tools/makepot.php wp-plugin ~/wp/git/pronamic-photo-contest ~/wp/git/pronamic-photo-contest/languages/pronamic_photo_contest.pot
+
+
 == Screenshots ==
 
 ...
 
 
 == Changelog ==
+
+= 1.0.1 =
+*	The latest entry widget will now by default link to the contest post.
 
 = 1.0.0 =
 *	Initial release
