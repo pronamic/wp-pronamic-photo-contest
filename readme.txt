@@ -2,7 +2,7 @@
 Contributors: pronamic, remcotolsma
 Tags: pronamic, post, like
 Requires at least: 3.0
-Tested up to: 3.2
+Tested up to: 3.9
 Stable tag: 1.0.0
 
 The Pronamic Photo Contest plugin allows you to setup an photo contest on your WordPress site.

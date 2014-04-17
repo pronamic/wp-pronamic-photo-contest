@@ -1,9 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Photo Contest\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/pronamic-photo-contest\n"
-"POT-Creation-Date: 2013-11-28 08:53:47+00:00\n"
-"PO-Revision-Date: 2013-11-28 09:55+0100\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/pronamic-photo-"
+"contest\n"
+"POT-Creation-Date: 2014-04-17 10:24:01+00:00\n"
+"PO-Revision-Date: 2014-04-17 12:24+0100\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -14,7 +15,7 @@ msgstr ""
 "_n_noop:1,2;__ngettext_noop:1,2;_x:2c,1;_nc:1,2;esc_attr_e;esc_html_e;"
 "esc_attr__;_nx:4c,1,2;_nx_noop:4c,1,2;esc_html_x:2c,1;esc_html__;_ex:2c,1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: admin/latest_entries_widget_form.php:2 includes/post.php:32
@@ -93,21 +94,6 @@ msgstr "Bekijken"
 msgid "Edit"
 msgstr "Bewerken"
 
-#: classes/Pronamic_WP_PhotoContestPlugin.php:51
-msgctxt "post type general name"
-msgid "Photo Contests"
-msgstr "Fotowedstrijden"
-
-#: classes/Pronamic_WP_PhotoContestPlugin.php:52
-msgctxt "post type singular name"
-msgid "Photo Contest"
-msgstr "Fotowedstrijd"
-
-#: classes/Pronamic_WP_PhotoContestPlugin.php:53
-msgctxt "pronamic_photo_contest"
-msgid "Add New"
-msgstr "Nieuwe toevoegen"
-
 #: classes/Pronamic_WP_PhotoContestPlugin.php:54
 msgid "Add New Photo Contest"
 msgstr "Nieuwe fotowedstrijd toevoegen"
@@ -143,26 +129,6 @@ msgstr "Bovenliggende fotowedstrijd:"
 #: classes/Pronamic_WP_PhotoContestPlugin.php:62 includes/post.php:35
 msgid "Photo Contest"
 msgstr "Fotowedstrijd"
-
-#: classes/Pronamic_WP_PhotoContestPlugin.php:71
-msgctxt "URL slug"
-msgid "photo-contests"
-msgstr "fotowedstrijden"
-
-#: classes/Pronamic_WP_PhotoContestPlugin.php:78
-msgctxt "post type general name"
-msgid "Photo Entries"
-msgstr "Foto inzendingen"
-
-#: classes/Pronamic_WP_PhotoContestPlugin.php:79
-msgctxt "post type singular name"
-msgid "Photo Entry"
-msgstr "Foto inzending"
-
-#: classes/Pronamic_WP_PhotoContestPlugin.php:80
-msgctxt "pronamic_photo_entry"
-msgid "Add New"
-msgstr "Nieuwe toevoegen"
 
 #: classes/Pronamic_WP_PhotoContestPlugin.php:81
 msgid "Add New Photo Entry"
@@ -200,11 +166,6 @@ msgstr "Bovenliggende foto inzending:"
 #: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:153
 msgid "Entries"
 msgstr "Inzendingen"
-
-#: classes/Pronamic_WP_PhotoContestPlugin.php:98
-msgctxt "URL slug"
-msgid "photo-entries"
-msgstr "foto-inzendingen"
 
 #: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:41
 msgid "General"
@@ -255,8 +216,8 @@ msgid "Pronamic Photo Contest"
 msgstr "Pronamic fotowedstrijd"
 
 #. Plugin URI of the plugin/theme
-msgid "http://wp.pronamic.eu/plugins/pronamic-photo-contest/"
-msgstr "http://wp.pronamic.eu/plugins/pronamic-photo-contest/"
+msgid "http://www.happywp.com/plugins/pronamic-photo-contest/"
+msgstr "http://www.happywp.com/plugins/pronamic-photo-contest/"
 
 #. Description of the plugin/theme
 msgid ""
@@ -273,6 +234,46 @@ msgstr "Pronamic"
 #. Author URI of the plugin/theme
 msgid "http://pronamic.eu/"
 msgstr "http://pronamic.nl/"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:51
+msgctxt "post type general name"
+msgid "Photo Contests"
+msgstr "Fotowedstrijden"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:78
+msgctxt "post type general name"
+msgid "Photo Entries"
+msgstr "Foto inzendingen"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:52
+msgctxt "post type singular name"
+msgid "Photo Contest"
+msgstr "Fotowedstrijd"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:79
+msgctxt "post type singular name"
+msgid "Photo Entry"
+msgstr "Foto inzending"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:53
+msgctxt "pronamic_photo_contest"
+msgid "Add New"
+msgstr "Nieuwe toevoegen"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:71
+msgctxt "URL slug"
+msgid "photo-contests"
+msgstr "fotowedstrijden"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:98
+msgctxt "URL slug"
+msgid "photo-entries"
+msgstr "foto-inzendingen"
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:80
+msgctxt "pronamic_photo_entry"
+msgid "Add New"
+msgstr "Nieuwe toevoegen"
 
 #~ msgid "Start Date Submit"
 #~ msgstr "Startdatum inzenden"
@@ -1526,12 +1527,12 @@ msgstr "http://pronamic.nl/"
 #~ "32 tekens zal automatisch worden afgekapt."
 
 #~ msgid ""
-#~ "Merge Tag Examples: Entry Id = <code>{entry_id}</code>, Form Id = <code>"
-#~ "{form_id}</code>, Form Title = <code>{form_title}</code>"
+#~ "Merge Tag Examples: Entry Id = <code>{entry_id}</code>, Form Id = "
+#~ "<code>{form_id}</code>, Form Title = <code>{form_title}</code>"
 #~ msgstr ""
 #~ "Samenvoegen tag voorbeelden: Inzending ID = <code>{entry_id}</code>, "
-#~ "Formulier ID = <code>{form_id}</code>, Formulier titel = <code>"
-#~ "{form_title}</code>"
+#~ "Formulier ID = <code>{form_id}</code>, Formulier titel = "
+#~ "<code>{form_title}</code>"
 
 #~ msgid "Options"
 #~ msgstr "Opties"

@@ -1,14 +1,15 @@
-# Copyright (C) 2013 Pronamic Photo Contest
+# Copyright (C) 2014 Pronamic Photo Contest
 # This file is distributed under the same license as the Pronamic Photo Contest package.
 msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Photo Contest 1.0.0\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/pronamic-photo-contest\n"
-"POT-Creation-Date: 2013-11-28 08:53:47+00:00\n"
+"Report-Msgid-Bugs-To: "
+"http://wordpress.org/support/plugin/pronamic-photo-contest\n"
+"POT-Creation-Date: 2014-04-17 10:24:01+00:00\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
@@ -88,21 +89,6 @@ msgstr ""
 msgid "Edit"
 msgstr ""
 
-#: classes/Pronamic_WP_PhotoContestPlugin.php:51
-msgctxt "post type general name"
-msgid "Photo Contests"
-msgstr ""
-
-#: classes/Pronamic_WP_PhotoContestPlugin.php:52
-msgctxt "post type singular name"
-msgid "Photo Contest"
-msgstr ""
-
-#: classes/Pronamic_WP_PhotoContestPlugin.php:53
-msgctxt "pronamic_photo_contest"
-msgid "Add New"
-msgstr ""
-
 #: classes/Pronamic_WP_PhotoContestPlugin.php:54
 msgid "Add New Photo Contest"
 msgstr ""
@@ -137,26 +123,6 @@ msgstr ""
 
 #: classes/Pronamic_WP_PhotoContestPlugin.php:62 includes/post.php:35
 msgid "Photo Contest"
-msgstr ""
-
-#: classes/Pronamic_WP_PhotoContestPlugin.php:71
-msgctxt "URL slug"
-msgid "photo-contests"
-msgstr ""
-
-#: classes/Pronamic_WP_PhotoContestPlugin.php:78
-msgctxt "post type general name"
-msgid "Photo Entries"
-msgstr ""
-
-#: classes/Pronamic_WP_PhotoContestPlugin.php:79
-msgctxt "post type singular name"
-msgid "Photo Entry"
-msgstr ""
-
-#: classes/Pronamic_WP_PhotoContestPlugin.php:80
-msgctxt "pronamic_photo_entry"
-msgid "Add New"
 msgstr ""
 
 #: classes/Pronamic_WP_PhotoContestPlugin.php:81
@@ -194,11 +160,6 @@ msgstr ""
 #: classes/Pronamic_WP_PhotoContestPlugin.php:89
 #: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:153
 msgid "Entries"
-msgstr ""
-
-#: classes/Pronamic_WP_PhotoContestPlugin.php:98
-msgctxt "URL slug"
-msgid "photo-entries"
 msgstr ""
 
 #: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:41
@@ -250,7 +211,7 @@ msgid "Pronamic Photo Contest"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "http://wp.pronamic.eu/plugins/pronamic-photo-contest/"
+msgid "http://www.happywp.com/plugins/pronamic-photo-contest/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -265,4 +226,44 @@ msgstr ""
 
 #. Author URI of the plugin/theme
 msgid "http://pronamic.eu/"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:51
+msgctxt "post type general name"
+msgid "Photo Contests"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:78
+msgctxt "post type general name"
+msgid "Photo Entries"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:52
+msgctxt "post type singular name"
+msgid "Photo Contest"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:79
+msgctxt "post type singular name"
+msgid "Photo Entry"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:53
+msgctxt "pronamic_photo_contest"
+msgid "Add New"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:71
+msgctxt "URL slug"
+msgid "photo-contests"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:98
+msgctxt "URL slug"
+msgid "photo-entries"
+msgstr ""
+
+#: classes/Pronamic_WP_PhotoContestPlugin.php:80
+msgctxt "pronamic_photo_entry"
+msgid "Add New"
 msgstr ""
