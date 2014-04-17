@@ -80,6 +80,8 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 		if ( $latest_entries_query->have_posts() ) {
 			$latest_entry = $latest_entries_query->next_post();
 			
+			$contest_id = get_post_meta( $latest_entry->ID, '_pronamic_photo_contest_id', true );
+
 			$width = $height = 0;
 			
 			if ( isset( $instance[ 'width' ] ) &&
@@ -92,7 +94,7 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 				$height  = $instance[ 'height' ];
 			}
 			
-			$data->image .= '<a href="' . get_post_permalink( $latest_entry->ID ) . '">';
+			$data->image .= '<a href="' . get_permalink( $contest_id ) . '">';
 			
 			if ( $width > 0 &&
 				 $height > 0) {

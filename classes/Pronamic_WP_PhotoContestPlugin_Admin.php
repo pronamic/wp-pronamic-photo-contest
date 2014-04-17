@@ -78,7 +78,7 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 	 * Enqueue scripts
 	 */
 	public function enqueue_scripts() {
-		wp_register_style( 'pronamic-photo-contest', plugins_url( 'admin/css/style.css', $this->plugin->file ), false, '1.0.0' );
+		wp_register_style( 'pronamic-photo-contest', plugins_url( 'admin/css/style.css', $this->plugin->file ), false, '1.0.1' );
 
 		// Screen
 		$screen = get_current_screen();

@@ -109,6 +109,6 @@ class Pronamic_WP_PhotoContestPlugin {
 	}
 	
 	public function enqueue_scripts() {
-		wp_register_style( 'pronamic-photo-contest', plugins_url( 'includes/css/style.css', $this->file ), false, '1.0.0' );
+		wp_register_style( 'pronamic-photo-contest', plugins_url( 'includes/css/style.css', $this->file ), false, '1.0.1' );
 	}
 }
