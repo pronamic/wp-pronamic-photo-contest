@@ -85,6 +85,19 @@ wp_nonce_field( 'pronamic_photo_contest_save', 'pronamic_photo_contest_meta_box_
 			<span class="description"><br /><?php echo $description; ?></span>
 		</td>
 	</tr>
+	<tr>
+	<tr valign="top">
+		<th scope="row">
+			<label for="_pronamic_photo_contest_votes_public"><?php _e( 'Votes Visibility', 'pronamic_photo_contest' ); ?></label>
+		</th>
+		<td>
+			<label for="_pronamic_photo_contest_votes_public">
+				<?php $value = get_post_meta( $post->ID, '_pronamic_photo_contest_votes_public', true ); ?>
+				<input name="_pronamic_photo_contest_votes_public" type="checkbox" id="_pronamic_photo_contest_votes_public" value="0" <?php checked( '0', $value ); ?> />
+				<?php _e( 'Hide votes', 'pronamic_photo_contest' ); ?>
+			</label>
+		</td>
+	</tr>
 </table>
 
 <script type="text/javascript">

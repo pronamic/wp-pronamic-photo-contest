@@ -246,10 +246,18 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 			'_pronamic_photo_contest_submit_start_date' => FILTER_SANITIZE_STRING,
 			'_pronamic_photo_contest_submit_end_date'   => FILTER_SANITIZE_STRING,
 			'_pronamic_photo_contest_vote_start_date'   => FILTER_SANITIZE_STRING,
-			'_pronamic_photo_contest_vote_end_date'     => FILTER_SANITIZE_STRING
+			'_pronamic_photo_contest_vote_end_date'     => FILTER_SANITIZE_STRING,
+			'_pronamic_photo_contest_votes_public'      => FILTER_VALIDATE_BOOLEAN,
 		);
 	
 		$this->save_post_meta( $post_id, $definition );
+		
+		// Other
+		$public = filter_input( INPUT_POST, '_pronamic_photo_contest_votes_public', FILTER_VALIDATE_BOOLEAN );
+		$public = is_null( $public ) ? true : $public;
+		$public = $public ? '1' : '0';
+
+		update_post_meta( $post_id, '_pronamic_photo_contest_votes_public', $public );
 	}
 
 	//////////////////////////////////////////////////
