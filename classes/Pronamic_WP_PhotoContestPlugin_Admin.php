@@ -52,8 +52,18 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 			array( 'label_for' => 'pronamic_photo_contest_gf_submit_form_id' ) // args
 		);
 
+		add_settings_field(
+			'pronamic_photo_contest_report_photo_page_id', // id
+			__( 'Report photo page', 'pronamic_photo_contest' ), // title
+			array( __CLASS__, 'dropdown_pages' ), // callback
+			'pronamic_photo_contest', // page
+			'pronamic_photo_contest_general', // section
+			array( 'label_for' => 'pronamic_photo_contest_report_photo_page_id' ) // args
+		);
+
 		// Register settings
 		register_setting( 'pronamic_photo_contest', 'pronamic_photo_contest_gf_submit_form_id' );
+		register_setting( 'pronamic_photo_contest', 'pronamic_photo_contest_report_photo_page_id' );
 	}
 
 	//////////////////////////////////////////////////
@@ -350,5 +360,16 @@ class Pronamic_WP_PhotoContestPlugin_Admin {
 			}
 			printf( '</select>' );
 		}
+	}
+
+	/**
+	 * Dropdown pages
+	 */
+	public function dropdown_pages( $args ) {
+		wp_dropdown_pages( array(
+			'name'             => $args['label_for'],
+			'selected'         => get_option( $args['label_for'] ),
+			'show_option_none' => __( '&mdash; Select a page &mdash;', 'pronamic_photo_contest' ),
+		) );
 	}
 }
