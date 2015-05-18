@@ -1,24 +1,22 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pronamic Photo Contest\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/pronamic-photo-"
-"contest\n"
-"POT-Creation-Date: 2014-08-14 13:03:04+00:00\n"
-"PO-Revision-Date: 2014-08-14 15:03+0100\n"
-"Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/pronamic-photo-contest\n"
+"POT-Creation-Date: 2015-05-18 09:04:05+00:00\n"
+"PO-Revision-Date: 2015-05-18 11:20+0100\n"
+"Last-Translator: K.Tolsma <kareljan@pronamic.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
-"Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;__ngettext:1,2;__withdesc;_ewithdesc;_c;"
-"_n_noop:1,2;__ngettext_noop:1,2;_x:2c,1;_nc:1,2;esc_attr_e;esc_html_e;"
-"esc_attr__;_nx:4c,1,2;_nx_noop:4c,1,2;esc_html_x:2c,1;esc_html__;_ex:2c,1\n"
+"Language: nl_NL\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;__ngettext:1,2;__withdesc;_ewithdesc;_c;_n_noop:1,2;__ngettext_noop:1,2;_x:2c,1;_nc:1,2;esc_attr_e;esc_html_e;esc_attr__;_nx:4c,1,2;_nx_noop:4c,1,2;esc_html_x:2c,1;esc_html__;_ex:2c,1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 1.6.7\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: admin/latest_entries_widget_form.php:2 includes/post.php:32
+#: admin/latest_entries_widget_form.php:2
+#: includes/post.php:32
 msgid "Title"
 msgstr "Titel"
 
@@ -56,7 +54,8 @@ msgid "Submit Period"
 msgstr "Inzenden periode"
 
 #: admin/meta-box-photo-contest-details.php:18
-#: admin/meta-box-photo-contest-details.php:57 includes/functions.php:28
+#: admin/meta-box-photo-contest-details.php:57
+#: includes/functions.php:28
 msgid "%s to %s"
 msgstr "%s tot %s"
 
@@ -94,7 +93,8 @@ msgstr "Verberg stemmen"
 msgid "No entries."
 msgstr "Geen inzendingen"
 
-#: admin/meta-box-photo-contest-entries.php:38 includes/post.php:77
+#: admin/meta-box-photo-contest-entries.php:38
+#: includes/post.php:77
 msgid "View"
 msgstr "Bekijken"
 
@@ -134,7 +134,8 @@ msgstr "Geen fotowedstrijden gevonden in prullenbak."
 msgid "Parent Photo Contest:"
 msgstr "Bovenliggende fotowedstrijd:"
 
-#: classes/Pronamic_WP_PhotoContestPlugin.php:62 includes/post.php:35
+#: classes/Pronamic_WP_PhotoContestPlugin.php:62
+#: includes/post.php:35
 msgid "Photo Contest"
 msgstr "Fotowedstrijd"
 
@@ -171,7 +172,7 @@ msgid "Parent Photo Entry:"
 msgstr "Bovenliggende foto inzending:"
 
 #: classes/Pronamic_WP_PhotoContestPlugin.php:89
-#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:153
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:163
 msgid "Entries"
 msgstr "Inzendingen"
 
@@ -183,25 +184,33 @@ msgstr "Algemeen"
 msgid "Gravity Forms submit form"
 msgstr "Gravity Forms inzenden formulier"
 
-#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:67
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:57
+msgid "Report photo page"
+msgstr "Rapporteer foto pagina"
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:77
 msgid "Photo Contest Settings"
 msgstr "Fotowedstrijd instellingen"
 
-#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:68
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:78
 msgid "Settings"
 msgstr "Instellingen"
 
-#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:144
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:154
 msgid "Details"
 msgstr "Details"
 
-#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:162
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:172
 msgid "Photo Entry"
 msgstr "Foto inzending"
 
-#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:344
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:354
 msgid "You don't  have any Gravity Forms forms."
 msgstr "Je hebt momenteel geen Gravity Forms formulieren."
+
+#: classes/Pronamic_WP_PhotoContestPlugin_Admin.php:372
+msgid "&mdash; Select a page &mdash;"
+msgstr "&mdash; Select een pagina &mdash;"
 
 #: classes/Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget.php:24
 msgid "Latest Entries Widget"
@@ -228,12 +237,8 @@ msgid "http://www.happywp.com/plugins/pronamic-photo-contest/"
 msgstr "http://www.happywp.com/plugins/pronamic-photo-contest/"
 
 #. Description of the plugin/theme
-msgid ""
-"The Pronamic Photo Contest plugin allows you to setup an photo contest on "
-"your WordPress site."
-msgstr ""
-"De Pronamic fotowedstrijd plugin maakt het mogelijk om een fotowedstrijd op "
-"te zetten in je WordPress website."
+msgid "The Pronamic Photo Contest plugin allows you to setup an photo contest on your WordPress site."
+msgstr "De Pronamic fotowedstrijd plugin maakt het mogelijk om een fotowedstrijd op te zetten in je WordPress website."
 
 #. Author of the plugin/theme
 msgid "Pronamic"
@@ -305,8 +310,8 @@ msgstr "Nieuwe toevoegen"
 #, fuzzy
 #~ msgid "Domain Name"
 #~ msgstr "Algemene naam"
-
 #~ msgctxt "category general name"
+
 #~ msgid "Photo Contests"
 #~ msgstr "Fotowedstrijden"
 
@@ -957,8 +962,8 @@ msgstr "Nieuwe toevoegen"
 
 #~ msgid "Sisow"
 #~ msgstr "Sisow"
-
 #~ msgctxt "sisow"
+
 #~ msgid "Merchant ID"
 #~ msgstr "Merchant ID"
 
@@ -970,8 +975,8 @@ msgstr "Nieuwe toevoegen"
 #~ "Je kunt je Merchant ID vinden op je <a href=\"%s\" target=\"_blank"
 #~ "\">Sisow account patina</a> onder <a href=\"%s\" target=\"_blank\">Mijn "
 #~ "profiel</a>."
-
 #~ msgctxt "sisow"
+
 #~ msgid "Merchant Key"
 #~ msgstr "Merchant Key"
 
@@ -1045,16 +1050,16 @@ msgstr "Nieuwe toevoegen"
 
 #~ msgid "Qantani"
 #~ msgstr "Qantani"
-
 #~ msgctxt "qantani"
+
 #~ msgid "Merchant ID"
 #~ msgstr "Merchant ID"
-
 #~ msgctxt "qantani"
+
 #~ msgid "Secret"
 #~ msgstr "Secret"
-
 #~ msgctxt "qantani"
+
 #~ msgid "Key"
 #~ msgstr "Key"
 
@@ -1211,6 +1216,7 @@ msgstr "Nieuwe toevoegen"
 #~ msgstr "Naam"
 
 #~ msgid "Configuration deleted."
+
 #~ msgid_plural "Configurations deleted."
 #~ msgstr[0] "Configuratie verwijderd."
 #~ msgstr[1] "Configuraties verwijderd."
@@ -1535,12 +1541,12 @@ msgstr "Nieuwe toevoegen"
 #~ "32 tekens zal automatisch worden afgekapt."
 
 #~ msgid ""
-#~ "Merge Tag Examples: Entry Id = <code>{entry_id}</code>, Form Id = "
-#~ "<code>{form_id}</code>, Form Title = <code>{form_title}</code>"
+#~ "Merge Tag Examples: Entry Id = <code>{entry_id}</code>, Form Id = <code>"
+#~ "{form_id}</code>, Form Title = <code>{form_title}</code>"
 #~ msgstr ""
 #~ "Samenvoegen tag voorbeelden: Inzending ID = <code>{entry_id}</code>, "
-#~ "Formulier ID = <code>{form_id}</code>, Formulier titel = "
-#~ "<code>{form_title}</code>"
+#~ "Formulier ID = <code>{form_id}</code>, Formulier titel = <code>"
+#~ "{form_title}</code>"
 
 #~ msgid "Options"
 #~ msgstr "Opties"
@@ -1614,9 +1620,6 @@ msgstr "Nieuwe toevoegen"
 #~ msgid "Page:"
 #~ msgstr "Pagina:"
 
-#~ msgid "&mdash; Select &mdash;"
-#~ msgstr "&mdash; Selecteren &mdash;"
-
 #~ msgid "URL:"
 #~ msgstr "URL:"
 
@@ -1642,6 +1645,7 @@ msgstr "Nieuwe toevoegen"
 #~ msgstr "iDEAL-feeds"
 
 #~ msgid "Feed deleted."
+
 #~ msgid_plural "Feeds deleted."
 #~ msgstr[0] "Feed verwijderd."
 #~ msgstr[1] "Feeds verwijderd."
@@ -1830,8 +1834,8 @@ msgstr "Nieuwe toevoegen"
 
 #~ msgid "Search Transactions"
 #~ msgstr "Zoek transacties"
-
 #~ msgctxt "link name"
+
 #~ msgid "Name"
 #~ msgstr "Naam"
 
@@ -1865,12 +1869,12 @@ msgstr "Nieuwe toevoegen"
 #, fuzzy
 #~ msgid "Edit Feed"
 #~ msgstr "Bewerken"
-
 #~ msgctxt "post type general name"
+
 #~ msgid "Blocks"
 #~ msgstr "Blokken"
-
 #~ msgctxt "post type singular name"
+
 #~ msgid "Block"
 #~ msgstr "Blok"
 
