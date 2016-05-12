@@ -16,7 +16,7 @@ class Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget extends WP_Widget {
 	 * 
 	 * @param $plugin
 	 */
-	public function Pronamic_WP_PhotoContestPlugin_LatestEntriesWidget( ) {
+	public function __construct( ) {
 		global $pronamic_photo_contest_plugin;
 		
 		$this->plugin = $pronamic_photo_contest_plugin;
